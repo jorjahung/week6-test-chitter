@@ -10,8 +10,10 @@
 <span class='timestamp'>
 	<% if ((DateTime.now - peep.created_at)*24).to_i > 24 %>
 		<%= peep.created_at.strftime("%b %d") %>
-	<% else %>
-		<%= ((DateTime.now - peep.created_at)*24).to_i %>h
+	<% elsif ((DateTime.now - peep.created_at)*24).to_i < 1 %>
+		<%= ((DateTime.now - peep.created_at)*24*60).to_i %>m
+		<% else %>
+			<%= ((DateTime.now - peep.created_at)*24).to_i %>h
 	<% end %>
 </span>
 
