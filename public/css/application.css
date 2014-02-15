@@ -5,7 +5,7 @@
   min-height: 100%;
   height: auto !important;
   height: 100%;
-  margin: 0 auto -4em;
+  margin: 0 auto -2em;
 }
 
 
@@ -75,14 +75,12 @@ header #user-peeps > * {
 
 header #user-peeps #welcome-message {
   font-size: 14px;
-  line-height: 55px;
+  color: white;
+  line-height: 40px;
   vertical-align: middle;
 }
 
-header #user-peeps #forgot-password{
-  color:white;
-  font-size: 12px;
-}
+
 /******************** HEADER ********************/
 
 /******************** BUTTONS ********************/
@@ -103,6 +101,7 @@ header #user-peeps #forgot-password{
   text-align: center;
   min-width: 110px;
   height: 28px;
+  font-family: 'Lato';
   font-size: 16px;
   background-color: #82B743;
   border: 2.5px solid white;
@@ -214,19 +213,29 @@ form {
     margin:5px; 
   }
 
+form.header input[type="text"], form input[type="password"] {
+    border: 1px solid gray;
+    font-size: 12px;
+    width: 100px;
+    height: 20px;
+    margin:5px; 
+  }
+
 
 /******************** FORMS ********************/
 
 
 /******************** FOOTER ********************/
 .footer, .push {
-  height: 4em;
+  height: 2em;
 }
 .footer {
 background-color: rgba(0,0,0,0.2);
 }
 
 footer {
+  height: 100%;
+  padding: 5px;
   display: flex;
   
 }
@@ -235,12 +244,8 @@ footer {
     margin: auto inherit;
   }
 
-/*  footer img {
-     http://stackoverflow.com/questions/10658475/3px-extra-height-on-a-div-with-an-image-inside-it 
-    vertical-align: top;
-  }*/
 
-  footer #technologies {
+  footer #jorja-signature {
     -webkit-flex: 1;
     flex: 1;
   }
