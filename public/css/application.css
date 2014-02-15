@@ -12,14 +12,14 @@
 body {
   padding-top: 50px;
   font-family: 'Lato',Helvetica, Arial, Sans-serif;
-  background-image: url('/images/background.png');
+  background-color: 
   height: 100%;
 }
 
 h1 {
   font-size: 1.5em;
   font-weight: bold;
-  color: rgba(95,95,95,1);
+  color: #2c506c;
   margin: 10px;
 }
 
@@ -89,12 +89,12 @@ header #user-peeps #welcome-message {
 
 /******************** BUTTONS ********************/
 .button.highlighted {
-  background-color: #ae406b;
+  background-color: #ffe5da;
 }
 
 
 .button.highlighted:hover {
-  background-color: #7e1c41;
+  background-color: #bfaba4;
 }
 
 .button {
@@ -107,18 +107,17 @@ header #user-peeps #welcome-message {
   height: 28px;
   font-family: 'Lato';
   font-size: 16px;
-  background-color: #82B743;
-  border: 2.5px solid white;
-  color: white; /*text colour*/
+  background-color: #BEC9D3;
+  border: 2.5px solid #2c506c;
+  color: #2c506c;
   text-decoration: none; /*no underlining*/
   padding: 1px 10px;
   border-radius: 4px; /*rounded corners*/
   margin: 5px;
-  text-shadow: 0 0 2px rgba(0,0,0, 0.4); /*for readability*/
 }
 
 .button:hover {
-  background-color: #54841d;
+  background-color: #8899a6;
 }
 /******************** BUTTONS ********************/
 
@@ -145,7 +144,7 @@ header #user-peeps #welcome-message {
 /******************** PEEPS ********************/
 #peeps-container {
   margin: 15px auto;
-  max-width: 75%;
+  max-width: 90%;
   background-color: rgba(196,196,196,0.9);
   border: 1px solid rgba(225, 232, 237, 1);
   border-radius: 6px;
@@ -171,27 +170,27 @@ header #user-peeps #welcome-message {
   color: #ae406b;
 }
 
-.peep .username {
+.username {
   font-size: 13px;
   color: rgb(136, 153, 166);
   margin-left: 3px;
 }
 
-.peep .fullname a {
+.fullname a {
   font-size: 16px;
   color: black;
 }
-.peep .fullname a:hover {
+.fullname a:hover {
   color: #ae406b;
   text-decoration: underline;
 }
 
-.peep .message {
+.message {
   font-size: 13px;
   margin: 10px 15px;
 }
 
-.peep .timestamp {
+.timestamp {
   float: right;
   font-size: 13px;
   color: rgb(136, 153, 166);
@@ -201,9 +200,9 @@ header #user-peeps #welcome-message {
 
 /******************** FORMS ********************/
 #form-container {
-  margin: 15px auto;
-  max-width: 55%;
-  padding: 15px;
+  margin: 10px auto;
+  max-width: 90%;
+  padding: 10px;
   background-color: rgba(255,255,255,0.9);
   border: 1px solid rgba(225, 232, 237, 1);
   border-radius: 6px;
@@ -225,7 +224,7 @@ form {
   form input[type="text"], form input[type="password"] {
     border: 1px solid rgba(0,0,0,0.1);
     font-size: 16px;
-    width: 400px;
+    width: 90%;
     margin:5px;
     border-radius: 4px;  
   }
@@ -236,12 +235,30 @@ form.header input[type="text"], form.header input[type="password"] {
     width: 110px;
     height: 25px;
     margin:5px; 
-    background-color: rgba(255,255,255,0.9);
+    background-color: rgba(255,255,255,0.8);
     border-radius: 4px; 
   }
 
 
 /******************** FORMS ********************/
+
+/******************** INDEX.ERB ********************/
+#signed-in{
+  width: 100%;
+  display: table;
+}
+
+#signed-in-left{
+  float:left;
+  width: 30%;
+}
+
+#signed-in-right{
+  float:right;
+  width: 70%;
+
+}
+/******************** INDEX.ERB ********************/
 
 
 /******************** FOOTER ********************/
