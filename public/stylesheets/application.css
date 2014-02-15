@@ -149,16 +149,15 @@ header #user-peeps #welcome-message {
   border: 1px solid rgba(225, 232, 237, 1);
   border-radius: 6px;
   box-shadow: 0 0 225px rgba(255,255,255,.55);
+  overflow: hidden;
 }
 
 .peep{
   background-color: rgba(255,255,255,0.9);
   border-top: 1px solid rgba(225, 232, 237, 1);
-  box-shadow: 0 0 225px rgba(255,255,255,.55);
-  /* 10px for top and bottom, inherit from parent */
-  /* for left and right */
   max-width: 100%;
   padding: 5px 10px;
+  position: relative;
 }
 
 .peep a {
