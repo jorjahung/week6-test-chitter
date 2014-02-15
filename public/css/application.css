@@ -10,7 +10,7 @@
 
 
 body {
-  margin-top: 60px;
+  padding-top: 50px;
   font-family: 'Lato',Helvetica, Arial, Sans-serif;
   background-image: url('/images/background.png');
   height: 100%;
@@ -19,8 +19,8 @@ body {
 h1 {
   font-size: 1.5em;
   font-weight: bold;
-  color: #7e1c41;
-  margin-bottom: 10px;
+  color: rgba(95,95,95,1);
+  margin: 10px;
 }
 
 /******************** HEADER ********************/
@@ -140,21 +140,21 @@ header #user-peeps #welcome-message {
 
 /******************** PEEPS ********************/
 #peeps-container {
-  background-color: rgba(255,255,255,0.9);
   margin: 15px auto;
-  border: 1px solid gray;
-  box-shadow:  0 0 2px rgba(0,0,0, 0.4);
   max-width: 75%;
-  padding: 5px;
+  background-color: rgba(196,196,196,0.9);
+  border: 1px solid rgba(225, 232, 237, 1);
+  border-radius: 6px;
+  box-shadow: 0 0 225px rgba(255,255,255,.55);
 }
 
 .peep{
-  background-color: rgba(240,236,233,0.4);
-  box-shadow: 0 0 5px rgba(0,0,0,0.4);
+  background-color: rgba(255,255,255,0.9);
+  border-top: 1px solid rgba(225, 232, 237, 1);
+  box-shadow: 0 0 225px rgba(255,255,255,.55);
   /* 10px for top and bottom, inherit from parent */
   /* for left and right */
-  margin: 20px auto;
-  max-width: 90%;
+  max-width: 100%;
   padding: 15px 10px;
 }
 
@@ -186,12 +186,13 @@ header #user-peeps #welcome-message {
 
 /******************** FORMS ********************/
 #form-container {
-  background-color: rgba(255,255,255,0.9);
   margin: 15px auto;
-  border: 1px solid gray;
-  box-shadow:  0 0 2px rgba(0,0,0, 0.4);
   max-width: 55%;
   padding: 15px;
+  background-color: rgba(255,255,255,0.9);
+  border: 1px solid rgba(225, 232, 237, 1);
+  border-radius: 6px;
+  box-shadow: 0 0 225px rgba(255,255,255,.55);
 }
 #form-container a {
   color: #7e1c41;
@@ -207,18 +208,21 @@ form {
   }
 
   form input[type="text"], form input[type="password"] {
-    border: 1px solid black;
+    border: 1px solid rgba(0,0,0,0.1);
     font-size: 16px;
     width: 400px;
-    margin:5px; 
+    margin:5px;
+    border-radius: 4px;  
   }
 
-form.header input[type="text"], form input[type="password"] {
-    border: 1px solid gray;
+form.header input[type="text"], form.header input[type="password"] {
+    border: 1px solid rgba(0,0,0,0.1);
     font-size: 12px;
-    width: 100px;
-    height: 20px;
+    width: 110px;
+    height: 25px;
     margin:5px; 
+    background-color: rgba(255,255,255,0.9);
+    border-radius: 4px; 
   }
 
 

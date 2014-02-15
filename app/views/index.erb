@@ -1,4 +1,5 @@
 <div id="peeps-container">
+<h1>Peeps</h1>
 <ul id='peeps'>
 	<% @peeps.sort_by{ |peep| peep.created_at}.reverse.each do |peep| %>
 		<%= partial :peep, :locals => {:peep => peep, :user => @users}  %>
