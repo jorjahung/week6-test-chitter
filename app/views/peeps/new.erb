@@ -1,0 +1,9 @@
+<div id="form-container"> 
+	<div id="new-link">
+	<h1>Hello <%= current_user.username %>, what's on your mind?</h1>
+	<form action="/peeps" method="post">
+		<input type="text" name="message" placeholder="Peep peep"><br>
+		<input type="submit" class="button" value="Add peep"><br>
+	</form>
+	</div>
+</div>

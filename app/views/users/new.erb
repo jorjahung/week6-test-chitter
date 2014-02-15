@@ -1,0 +1,12 @@
+<div id="form-container"> 
+<h1>Please sign up</h1>
+
+<form action="/users" method="post">
+	<input name="email" type="text" value="<%= @user.email %>" placeholder="E-mail address"><br>
+	<input name="full_name" type="text" value="<%= @user.full_name %>" placeholder="Full name"><br>
+	<input name="username" type="text" value="<%= @user.username %>" placeholder="Username"><br>
+	<input name="password" type="password" placeholder="Password"><br>
+	<input name="password_confirmation" type="password" placeholder="Confirm password"><br>
+	<input type="submit"  class="button" value="Sign up">
+</form>
+</div>
