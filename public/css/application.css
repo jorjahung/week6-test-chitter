@@ -1,0 +1,251 @@
+* {
+  box-sizing: border-box;
+}
+.wrapper {
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+  margin: 0 auto -4em;
+}
+
+
+body {
+  font-family: 'Lato',Helvetica, Arial, Sans-serif;
+  background-image: url('/images/background.png');
+  height: 100%;
+}
+
+h1 {
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #7e1c41;
+  margin-bottom: 10px;
+}
+
+/******************** HEADER ********************/
+header {  
+  height: 70px;
+  background-color: black;
+  color: white;
+  padding: 10px 20px;
+}
+
+header #logo {    
+  position: relative;
+  display: block;
+  float: left;
+  font-size: 2em;
+  line-height: 55px;
+  vertical-align: middle;  
+  font-family: 'Montserrat Alternates', Sans-serif; 
+  font-weight: bold;
+}
+
+header #logo a {
+  text-decoration: none;
+  color: white;
+  cursor: pointer;
+}
+
+header #add-peeps {
+  text-align: center;  
+  float: right;
+  vertical-align: middle;
+}
+
+header #user-peeps {
+  display: inline-block;
+  text-align: center;  
+  float: right;
+
+}
+
+header #user-peeps > * {
+  display: inline-block;
+
+ }
+
+header #user-peeps #welcome-message {
+  font-size: 14px;
+  line-height: 55px;
+  vertical-align: middle;
+}
+
+header #user-peeps #forgot-password{
+  color:white;
+  font-size: 12px;
+}
+/******************** HEADER ********************/
+
+/******************** BUTTONS ********************/
+.button.highlighted {
+  background-color: #ae406b;
+  line-height: 28px;
+  vertical-align: middle;
+}
+
+
+.button.highlighted:hover {
+  background-color: #7e1c41;
+}
+
+.button {
+  cursor: pointer;
+  display: inline-block; /* display inline but have dimensions */
+  min-width: 110px;
+  height: 42px;
+  font-size: 16px;
+  background-color: #82B743;
+  border: 2.5px solid white;
+  color: white; /*text colour*/
+  text-decoration: none; /*no underlining*/
+  padding: 5px 10px;
+  text-align: center;
+  border-radius: 4px; /*rounded corners*/
+  margin: 5px;
+  text-shadow: 0 0 2px rgba(0,0,0, 0.4); /*for readability*/
+  vertical-align: middle;
+}
+
+.button:hover {
+  background-color: #54841d;
+}
+/******************** BUTTONS ********************/
+
+/******************** NOTICES ********************/
+.flash {
+  text-align: center;
+  margin: 5px auto;
+  padding: 7px;
+  border-radius: 4px;
+  box-shadow: 0 0 3px rgba(0,0,0,0.4);
+  color: white;
+  width: 90%;
+}
+
+.flash.notice{
+  background-color: rgba(53,144,92,0.75);
+}
+
+.flash.error{
+  background-color: rgba(174,64,107,1);
+}
+/******************** NOTICES ********************/
+
+/******************** PEEPS ********************/
+#peeps-container {
+  background-color: rgba(255,255,255,0.9);
+  margin: 15px auto;
+  border: 1px solid gray;
+  box-shadow:  0 0 2px rgba(0,0,0, 0.4);
+  max-width: 75%;
+  padding: 5px;
+}
+
+.peep{
+  background-color: rgba(240,236,233,0.4);
+  box-shadow: 0 0 5px rgba(0,0,0,0.4);
+  /* 10px for top and bottom, inherit from parent */
+  /* for left and right */
+  margin: 20px auto;
+  max-width: 90%;
+  padding: 15px 10px;
+}
+
+.peep a {
+  color: #7e1c41;
+  text-decoration: none;
+}
+
+.peep a:hover {
+  color: #ae406b;
+}
+
+.peep a.title {
+  /* to make it slightly more prominent */
+  font-size: 1.5em;
+  letter-spacing: 1px;
+}
+
+.peep .description {
+  margin: 10px inherit;
+}
+
+.peep .source {
+  /* http://learnlayout.com/float.html and the next 4 sections */
+  float: right; 
+  font-size: 12px;
+}
+/******************** PEEPS ********************/
+
+/******************** FORMS ********************/
+#form-container {
+  background-color: rgba(255,255,255,0.9);
+  margin: 15px auto;
+  border: 1px solid gray;
+  box-shadow:  0 0 2px rgba(0,0,0, 0.4);
+  max-width: 55%;
+  padding: 15px;
+}
+#form-container a {
+  color: #7e1c41;
+
+}
+
+form {
+  text-align: left;
+}
+
+  form p {
+    margin: 10px 0;
+  }
+
+  form input[type="text"], form input[type="password"] {
+    border: 1px solid black;
+    font-size: 16px;
+    width: 400px;
+    margin:5px; 
+  }
+
+
+/******************** FORMS ********************/
+
+
+/******************** FOOTER ********************/
+.footer, .push {
+  height: 4em;
+}
+.footer {
+background-color: rgba(0,0,0,0.2);
+}
+
+footer {
+  display: flex;
+  
+}
+
+  footer > * {
+    margin: auto inherit;
+  }
+
+/*  footer img {
+     http://stackoverflow.com/questions/10658475/3px-extra-height-on-a-div-with-an-image-inside-it 
+    vertical-align: top;
+  }*/
+
+  footer #technologies {
+    -webkit-flex: 1;
+    flex: 1;
+  }
+
+  footer p {
+    float: right;
+    line-height: 1em;
+    vertical-align: middle;
+    padding: 5px 25px;
+  }
+/******************** FOOTER ********************/
+
+
+
+
