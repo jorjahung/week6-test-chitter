@@ -1,12 +1,9 @@
 require 'spec_helper'
 
 feature "User browses the list of links" do 
-  before(:each) { Peep.create(:message => "Hello Chitter!", 
-                              :timestamp => Time.now.strftime("%F %R"))
-                  Peep.create(:message => "Second message!", 
-                              :timestamp => Time.now.strftime("%F %R"))
-                  Peep.create(:message => "Third peep!", 
-                              :timestamp => Time.now.strftime("%F %R"))
+  before(:each) { Peep.create(:message => "Hello Chitter!")
+                  Peep.create(:message => "Second message!")
+                  Peep.create(:message => "Third peep!")
   }
 
 
