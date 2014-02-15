@@ -201,11 +201,11 @@ header #user-peeps #welcome-message {
 #form-container {
   margin: 10px auto;
   max-width: 90%;
-  padding: 10px;
-  background-color: rgba(255,255,255,0.9);
+  background-color: rgba(196,196,196,0.9);
   border: 1px solid rgba(225, 232, 237, 1);
   border-radius: 6px;
   box-shadow: 0 0 225px rgba(255,255,255,.55);
+  overflow: hidden;
 }
 #form-container a {
   color: #7e1c41;
@@ -213,7 +213,10 @@ header #user-peeps #welcome-message {
 }
 
 form {
+  margin-top: 10px;
   text-align: left;
+  padding: 10px 20px;
+  background-color: rgba(255,255,255,0.9);
 }
 
   form p {
@@ -228,6 +231,11 @@ form {
     border-radius: 4px;  
   }
 
+form.header {
+  padding: 0px;
+  margin: 0px;
+  background-color: rgba(255,255,255,0);
+}
 form.header input[type="text"], form.header input[type="password"] {
     border: 1px solid rgba(0,0,0,0.1);
     font-size: 12px;
@@ -236,6 +244,7 @@ form.header input[type="text"], form.header input[type="password"] {
     margin:5px; 
     background-color: rgba(255,255,255,0.8);
     border-radius: 4px; 
+    padding: 0px;
   }
 
 
