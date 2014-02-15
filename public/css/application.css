@@ -23,6 +23,10 @@ h1 {
   margin: 10px;
 }
 
+em {
+  font-weight: 900;
+}
+
 /******************** HEADER ********************/
 header {  
   padding: 0 20px;
@@ -155,11 +159,11 @@ header #user-peeps #welcome-message {
   /* 10px for top and bottom, inherit from parent */
   /* for left and right */
   max-width: 100%;
-  padding: 15px 10px;
+  padding: 5px 10px;
 }
 
 .peep a {
-  color: #7e1c41;
+  color: rgb(136, 153, 166);
   text-decoration: none;
 }
 
@@ -167,21 +171,32 @@ header #user-peeps #welcome-message {
   color: #ae406b;
 }
 
-.peep a.title {
-  /* to make it slightly more prominent */
-  font-size: 1.5em;
-  letter-spacing: 1px;
+.peep .username {
+  font-size: 13px;
+  color: rgb(136, 153, 166);
+  margin-left: 3px;
 }
 
-.peep .description {
-  margin: 10px inherit;
+.peep .fullname a {
+  font-size: 16px;
+  color: black;
+}
+.peep .fullname a:hover {
+  color: #ae406b;
+  text-decoration: underline;
 }
 
-.peep .source {
-  /* http://learnlayout.com/float.html and the next 4 sections */
-  float: right; 
-  font-size: 12px;
+.peep .message {
+  font-size: 13px;
+  margin: 10px 15px;
 }
+
+.peep .timestamp {
+  float: right;
+  font-size: 13px;
+  color: rgb(136, 153, 166);
+}
+
 /******************** PEEPS ********************/
 
 /******************** FORMS ********************/

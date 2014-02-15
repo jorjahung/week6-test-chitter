@@ -1,10 +1,22 @@
 <li class="peep">
 
-	<div class='description'>
+<span class='fullname'>
+	<a href="/peeps/<%= peep.poster_username %>"><em><%= peep.poster_fullname %></em> </a>
+</span>
+
+<span class='username'>@<%= peep.poster_username %></a>
+</span>
+
+<span class='timestamp'>
+	<% if ((DateTime.now - peep.created_at)*24).to_i > 24 %>
+		<%= peep.created_at.strftime("%b %d") %>
+	<% else %>
+		<%= ((DateTime.now - peep.created_at)*24).to_i %>h
+	<% end %>
+</span>
+
+	<div class='message'>
 		<%= peep.message %>
 	</div>
-<span class='source'>
-    added <%= peep.created_at %> by <%= peep.poster_fullname %> (<a href="/peeps/<%= peep.poster_username %>"><%= peep.poster_username %></a>)
 
-</span>
 </li>
