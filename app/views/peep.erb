@@ -1,0 +1,10 @@
+<li class="peep">
+
+	<div class='description'>
+		<%= peep.message %>
+	</div>
+<span class='source'>
+    added <%= peep.created_at %> by <%= peep.poster_fullname %> (<a href="/peeps/<%= peep.poster_username %>"><%= peep.poster_username %></a>)
+
+</span>
+</li>
