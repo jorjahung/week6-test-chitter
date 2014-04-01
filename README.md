@@ -12,4 +12,4 @@ Technologies used:
 
 Deployed to Heroku: http://chitter-staging.herokuapp.com
 
-![alt text](https://raw.githubusercontent.com/jorjahung/chitter/master/chitter.png "Chitter")
+![alt text](https://raw.githubusercontent.com/jorjahung/week6-test-chitter/master/chitter.png "Chitter")
